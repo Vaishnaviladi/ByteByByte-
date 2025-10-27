@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Awards & Achievements Gallery</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background: linear-gradient(135deg, #ffecd2, #fcb69f);
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px;
+            background: rgba(255,255,255,0.8);
+            backdrop-filter: blur(5px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            color: #b92b27;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            padding: 50px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-bottom: 2px solid #b92b27;
+        }
+
+        .card h3 {
+            margin: 15px 0;
+            color: #b92b27;
+            font-size: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: rgba(255,255,255,0.7);
+            border-top: 2px solid #b92b27;
+            font-size: 16px;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        footer li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Awards & Achievements Gallery 🏆</h1>
+        <p>A collection of my proud moments, creative works, and certificates</p>
+    </header>
+
+    <div class="gallery">
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Trophy_icon.svg" alt="Best Student Award">
+            <h3>Best Student Award</h3>
+        </div>
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Certificate_icon.svg" alt="Academic Excellence">
+            <h3>Academic Excellence</h3>
+        </div>
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Art_paint_palette_icon.svg" alt="Art & Craft Creation">
+            <h3>Art & Craft Creation</h3>
+        </div>
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Sports_trophy_icon.svg" alt="Sports Achievement">
+            <h3>Sports Achievement</h3>
+        </div>
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Music_note_icon.svg" alt="Music Hobby">
+            <h3>Music Hobby</h3>
+        </div>
+    </div>
+
+    <footer>
+        <h3>📂 Image File Formats Used</h3>
+        <ul>
+            <li>1. PNG (.png)</li>
+            <li>2. JPG (.jpg)</li>
+            <li>3. SVG (.svg)</li>
+        </ul>
+    </footer>
+
+</body>
+</html>
